@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     public GameObject objective;
     public GameObject overScreen;
     public GameObject winScreen;
+    public GameObject pauseScreen;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class GameOver : MonoBehaviour
         objective = GameObject.FindGameObjectWithTag("Objective");
         overScreen = FindInActiveObjectByTag("GameOver");
         winScreen = FindInActiveObjectByTag("Win");
+        pauseScreen = FindInActiveObjectByTag("Pause");
     }
 
     public void EndGame()
@@ -71,5 +73,10 @@ public class GameOver : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void Pause()
+    {
+        pauseScreen.SetActive(true);
     }
 }

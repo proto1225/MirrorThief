@@ -26,6 +26,11 @@ public class Player : MonoBehaviour
         mousePosition = Input.mousePosition;
 
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameOver.Pause();
+        }
     }
 
     void FixedUpdate()

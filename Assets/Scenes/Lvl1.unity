@@ -367,7 +367,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -871,6 +871,38 @@ PrefabInstance:
       value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 3805802205067600761, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098446368956079688, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440393438971593260, guid: a6b20b492f2960244b04f427ab22521b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
