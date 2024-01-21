@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private bool escape = false;
     public GameOver gameOver;
     public Rigidbody2D rb;
+    public bool canMove = true;
 
     void Start()
     {
@@ -21,8 +22,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        if(canMove)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+        }
         mousePosition = Input.mousePosition;
 
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
